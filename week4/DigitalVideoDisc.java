@@ -1,4 +1,3 @@
-package week4;
 
 public class DigitalVideoDisc {
     private String title;
@@ -41,10 +40,6 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
-    public DigitalVideoDisc(float cost, String category, String title) {
-
-    }
-
     public DigitalVideoDisc(String title, String category, String director, float cost) {
         this.title = title;
         this.category = category;
@@ -60,4 +55,21 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setCost(float cost) {
+        this.cost = cost;
+    }
+
+        
 }

@@ -1,4 +1,3 @@
-package week4;
 
 public class Aims {
     public static void main(String[] args) {
@@ -8,7 +7,7 @@ public class Aims {
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         DigitalVideoDisc dvd4 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        DigitalVideoDisc dvd5 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
+        DigitalVideoDisc dvd5 = new DigitalVideoDisc("Aladin", "Animation", 20f);
         DigitalVideoDisc[] disc = { dvd1, dvd2, dvd3, dvd4, dvd5 };
         System.out.print("***********************Order 1***********************\nDate: ");
         date.print();
@@ -21,7 +20,7 @@ public class Aims {
         Order anOrder1 = new Order();
         Mydate date1 = new Mydate("tam", "chin", "2000");
         DigitalVideoDisc[] disc1 = { dvd1, dvd2, dvd5 };
-        System.out.print("***********************Order 2***********************\nDate: ");
+        System.out.print("***********************Order***********************\nDate: ");
         date1.print();
         System.out.println("Ordered Items: ");
         anOrder1.addDigitalVideoDiscmang(disc1);

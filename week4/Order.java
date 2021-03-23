@@ -1,11 +1,11 @@
-package week4;
+
 
 import java.util.*;
 
 public class Order {
     public static final int MAX_NUMBERS_ORDERED = 3;
-    public static final int MAX_LIMITTED_ORDERS = 5;
-    public static int nbOrder;
+    public static final int MAX_LIMITTED_ORDERS = 2;
+    private static int nbOrder;
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     int dem = 0;
     int stt = 0;
@@ -50,7 +50,7 @@ public class Order {
                         + " - " + disc[dem - 1].getDirector() + " - " + disc[dem - 1].getLength() + " - "
                         + disc[dem - 1].getCost());
                 qtyOrdered();
-                if (dem > 3) {
+                if (dem > MAX_NUMBERS_ORDERED) {
                     int chon;
                     int nhapDVD;
                     boolean a = true;
@@ -71,7 +71,7 @@ public class Order {
                         case 2:
                             System.out.println("DVD" + stt + " đã xóa khỏi danh sách");
                             a = false;
-                            dem--;
+                            
                             break;
                         default:
                             System.out.println("Bạn chọn sai, hãy chọn lại");
@@ -88,8 +88,15 @@ public class Order {
 
     public float totalCost(DigitalVideoDisc[] disc) {
         float tong = 0;
-        for (int i = 0; i < dem; i++) {
+        if (dem > MAX_NUMBERS_ORDERED){
+        for (int i = 0; i < MAX_NUMBERS_ORDERED; i++) {
             tong += disc[i].getCost();
+        }
+        } else {
+            for (int i = 0; i < dem; i++) {
+                tong += disc[i].getCost();
+            }
+
         }
         return tong;
     }
@@ -100,6 +107,6 @@ public class Order {
                 itemsOrdered[i] = itemsOrdered[i + 1];
             }
         }
-        dem--;
+        
     }
 }
