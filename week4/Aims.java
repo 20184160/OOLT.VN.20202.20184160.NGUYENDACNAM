@@ -3,11 +3,11 @@ public class Aims {
     public static void main(String[] args) {
         Order anOrder = new Order();
         Mydate date = new Mydate("muoi", "chin", "2000");
-        DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
-        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f);
-        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        DigitalVideoDisc dvd4 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        DigitalVideoDisc dvd5 = new DigitalVideoDisc("Aladin", "Animation", 20f);
+        DigitalVideoDisc dvd1 = new DigitalVideoDisc("Naruto", "Animation", "Roger Allers", 87, 19.95f);
+        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Godzilla", "Science Fiction", 87, 24.95f);
+        DigitalVideoDisc dvd3 = new DigitalVideoDisc("One Piece", "Animation", 29.99f);
+        DigitalVideoDisc dvd4 = new DigitalVideoDisc("Dragonball", "Animation", 29.99f);
+        DigitalVideoDisc dvd5 = new DigitalVideoDisc("Doraemon", "Animation", 20f);
         DigitalVideoDisc[] disc = { dvd1, dvd2, dvd3, dvd4, dvd5 };
         System.out.print("***********************Order 1***********************\nDate: ");
         date.print();
@@ -29,7 +29,7 @@ public class Aims {
         System.out.println("***************************************************");
 
         Order anOrder2 = new Order();
-        Mydate date2 = new Mydate("bay", "chin", "2000");
+        Mydate date2 = new Mydate("hai chin", "chin", "2000");
         DigitalVideoDisc[] disc2 = { dvd1, dvd2, dvd5 };
         System.out.print("***********************Order 3***********************\nDate: ");
         date2.print();

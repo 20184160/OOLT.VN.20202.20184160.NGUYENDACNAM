@@ -39,7 +39,12 @@ public class DigitalVideoDisc {
         this.category = category;
         this.cost = cost;
     }
-
+    public DigitalVideoDisc(String title, String category, int length, float cost) {
+        this.title = title;
+        this.category = category;
+        this.length = length;
+        this.cost = cost;
+    }
     public DigitalVideoDisc(String title, String category, String director, float cost) {
         this.title = title;
         this.category = category;
