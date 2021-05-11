@@ -60,6 +60,9 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
+    public DigitalVideoDisc(int i, String string, String string2, String string3, int j, float f) {
+    }
+
     public void setCategory(String category) {
         this.category = category;
     }
