@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        "src/Hust/Soict/Hedspi/Test/media",
+        "src/Hust/Soict/Hedspi/Aim",
+        ""
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\Admin\\Downloads\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar"
+    ]
+}
